@@ -1,0 +1,27 @@
+using System;
+var rnd= new Random();
+int tutulan=rnd.Next(1,100);
+int hak=3;
+while(hak>0)
+{
+    Console.Write("sayi: ");
+    int sayi;
+    sayi=Convert.ToInt32(Console.ReadLine());
+    hak--;
+    if(sayi==tutulan)
+    {
+        Console.WriteLine("tebrikler bildiniz");
+        break;
+    }
+
+    else{
+        if(hak==0)
+        {Console.WriteLine("oyun bitti");} 
+        break;
+      if(tutulan>sayi)
+        {Console.Write("yukarı");}
+        else
+        {Console.Write("aşağı");}
+    }
+}
+Console.ReadKey();
